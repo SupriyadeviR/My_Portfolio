@@ -1,0 +1,145 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.hero {
+  background: linear-gradient(to right, #774936, #bf8b67);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero span {
+  color: #ffddaa;
+}
+
+.resume-btn {
+  background: #fff;
+  color: #774936;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: #eac086;
+  color: #000;
+}
+
+h2 {
+  color: #774936;
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.section {
+  padding: 40px 0;
+  animation: fadeInUp 1s ease;
+}
+
+.box {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background-color: #fff3e6;
+}
+
+a {
+  color: #774936;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #bf8b67;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social a {
+  background: #f2f2f2;
+  padding: 10px 15px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  background: #e8c4a2;
+  color: #222;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #774936;
+  color: white;
+  margin-top: 50px;
+  border-top: 5px solid #bf8b67;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  .social {
+    flex-direction: column;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
